@@ -7,7 +7,7 @@ export default ({
   debug: boolean | undefined,
   url: string | undefined
 } = {
-  debug: undefined
+  debug: undefined,
   url: undefined
 }) => {
   return {
