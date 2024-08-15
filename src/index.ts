@@ -1,11 +1,14 @@
 import type { IndexHtmlTransformResult, HtmlTagDescriptor } from 'vite'
 
 export default ({
-  debug
+  debug,
+    url
 } : {
-  debug: boolean | undefined
+  debug: boolean | undefined,
+  url: string | undefined
 } = {
   debug: undefined
+  url: undefined
 }) => {
   return {
     name: 'vite-plugin-eruda',
@@ -14,7 +17,7 @@ export default ({
         {
           tag: 'script',
           attrs: {
-            src: 'https://cdn.jsdelivr.net/npm/eruda',
+            src: url || 'https://cdn.jsdelivr.net/npm/eruda',
           },
           injectTo: 'head',
         },

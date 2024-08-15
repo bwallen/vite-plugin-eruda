@@ -29,5 +29,11 @@ module.exports = {
 
   Optional. If not, process.env.node will be used by default `process.env.NODE_ENV !== "production"` standard opens the debugging mode. If there is, this parameter takes precedence.
 
+#### `url`
+
+- **Type:** `string | undefind`
+- **Default:** `'undefind'`
+  eruda url。不传值，默认使用 https://cdn.jsdelivr.net/npm/eruda
+
 ### License
 MIT
